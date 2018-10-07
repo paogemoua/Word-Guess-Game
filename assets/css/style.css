@@ -1,16 +1,110 @@
-body, html {
-    height: 100%;
+/* Background image */
+body html {
+    height: 100vh;
     margin: 0;
+    z-index: auto;
 }
-    .bg {
-    /* The mage used */
-    background-image: url("../images/cemetery-manytombstones.jpg");
-    
-    /* Full height */
-    height: 100%;
 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.bg {
+/* The image used */
+background-image: url("../images/Headstones-illuminated-by-pink-light-on-ground_long.jpg");
+
+/* Full height */
+height: 100%;
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+opacity: 1;
+z-index: 1;
+}
+
+/* Styling for header */
+#Hangman_header {
+    font-family: 'Nosifer', "cursive";
+    justify-content: left;
+    color: whitesmoke;
+}
+
+#header {
+    font-family: 'Nosifer', "cursive";
+    justify-content: center;
+    color: whitesmoke;
+}
+
+#rightslanted_header {
+    position: relative;
+    top: 45px;
+    left: 15%; /* 80 * tan(45) / 2 = 40 where 80 is the height on the cell and 45 is the transform angle*/
+    -ms-transform:skew(0deg,-22.5deg);
+    -moz-transform:skew(0deg,-22.5deg);
+    -webkit-transform:skew(0deg,-22.5deg);
+    -o-transform:skew(0deg,-22.5deg);
+    transform:skew(0deg,-22.5deg);
+    overflow: hidden;
+}
+
+#leftslanted_header {
+    position: relative;
+    top: 0px;
+    left: 40px; /* 80 * tan(45) / 2 = 40 where 80 is the height on the cell and 45 is the transform angle*/
+    -ms-transform:skew(-45deg,0deg);
+    -moz-transform:skew(-45deg,0deg);
+    -webkit-transform:skew(-45deg,0deg);
+    -o-transform:skew(-45deg,0deg);
+    transform:skew(-45deg,0deg);
+    overflow: hidden;
+}
+
+/* Styling for md box */
+#main {
+    border-width: 5px;
+    border-style: dotted;
+    border-color: white;
+}
+
+/* Styling for L box */
+#left {
+    border-right-width: 5px;
+    border-right: dotted;
+    border-color: white;
+}
+
+img {
+    width: 350px;
+    height: 305px;
+}
+
+#img {
+    justify-content: center;
+}
+
+#description-card {
+    justify-content: center;
+}
+
+/* Styling for R box */
+#right {
+    font-family: 'Nosifer', "cursive";
+    text-align: center;
+}
+
+#right h3, p {
+    color: whitesmoke;
+}
+
+#right p {
+    font-family: 'Creepster', "cursive";
+    font-size: 25px;
+}
+
+/* Styling for footer */
+footer {
+    background-color: transparent !important;
+}
+
+.footer {
+    justify-content: center;
 }

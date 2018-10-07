@@ -8,20 +8,83 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets\css\style.css" />
-    <script src="assets\javascript\game.js"></script>
+    <script src="assets\javascript\game_codes.js"></script>
     <link rel="icon" href="https://png.icons8.com/cotton/40/000000/halloween-candy-1.png">
+    <link href="https://fonts.googleapis.com/css?family=Nosifer|Open+Sans:800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Butcherman|Creepster" rel="stylesheet">
 </head>
+
 <body>
-<div class="bg"></div>
-<div class="container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="bg">
+    <div class="row">&nbsp;</div>
+    <div class="row" id="Hangman_header">
+        <h1 id="rightslanted_header">Hangman</h1>
     </div>
+    <div class="row" id="header">
+        <h2 id="leftslanted_header">Halloween Edition</h2>
+    </div>
+    <div class="row">&nbsp;</div>
+    <div class="row" id="header">
+        <p>Beware - all who've played never leave. You've been warned - let's play a game.</p>
+    </div>
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10"></div>
+            <div class="container">
+                <div class="row" id="main">
+                    <div class="col" id="left">
+                        <div class="row">&nbsp;</div>
+                        <div class="row" id="img">
+                            <!--<a href="https://placeholder.com"><img id= "image" src="https://via.placeholder.com/305x350"></a>-->
+                            <img src="..\Word-Guess-Game\assets\images\atlasmonsters.jpg" alt="Monsters Around the World">
+                        </div>
+                        <br>
+                        <!--
+                        <div class="row" id="description-card">
+                            <div class="card border-dark mb-3" style="max-width: 19rem;">
+                                <div class="card-header">Who is this monster?</div>
+                                <div class="card-body text-dark">
+                                    <h5 class="card-title">Hint:</h5>
+                                    <p class="card-text text-dark">Some quick description text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        -->
+                        <div class="row">&nbsp;</div>
+                    </div>
+                    <div class="col" id="right">
+                        <p>&nbsp;</p>
+                        <h3>PRESS ANY KEY TO GET STARTED!</h3>
+                        <br>
+                        <p>Wins: <span id="winstracker"></span></p>
+                        <p></p> <!-- placeholder for tally marks -->
+                        <p>Losses: <span id="losstracker"></span></p>
+                        <p></p> <!-- placeholder for tally marks -->
+                        <p>Current Word: <h3><span id="currentword"></span></h3></p>
+                        <p></p> <!-- placeholder for underscores & word -->
+                        <p>Number of Guesses Remaining: <span id="guessesremaining"></span></p>
+                        <p></p> <!-- placeholder for tally marks of gusesses remaining -->
+                        <p>Letters Already Guessed: <span id="playerguesses"></span></p>
+                        <p></p> <!-- placeholder for letteres guessed -->
+                    </div>
+                </div>
+            </div>
+        <div class="col-1"></div>
+    </div>
+</div>
 </body>
-<footer>
-    <h6>&copy;Copyright</h6>
-    <a href="https://icons8.com">Icon pack by Icons8</a><br>
-    <a href="https://www.freepik.com/free-photo/skull-and-tombstones-on-night-cemetery_2816934.htm">Designed by Freepik</a>
+<footer class="container">
+    <div class="row">&nbsp;</div>
+    <div class="row footer">
+        <h6>&copy;Copyright</h6>
+    </div>
+    <div class="row footer">
+        <a href="https://icons8.com">Icon pack by Icons8</a>
+    </div>
+    <div class="row footer">
+        <a href='https://www.freepik.com/free-photo/headstones-illuminated-by-pink-light-on-ground_2825780.htm'>Designed by Freepik</a>
+    </div>
+    <div class="row">&nbsp;</div>
 </footer>
 </html>
